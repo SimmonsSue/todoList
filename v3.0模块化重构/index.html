@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todoList</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <section  class="section">
+                    <span class="appName">TodoList</span>
+                    <span class="add">
+                        <form action="">
+                            <input id="inputValue"type="text" placeholder="添加todo" onkeypress="" required="required">
+                        </form>
+                    </span>
+                    <span class="superAdd" >
+                        <a id="superAdd" href="javascript:;" style="float:right;font-size: 10px">
+                            添加一万条
+                        </a>
+                        <!-- <button onclick="superAdd1()" style="display: block;height:25px;color: white;background-color:rgb(167, 160, 120);border-radius: 5px;margin-left:0px;" >批量添加</button> -->
+                    </span>
+                    
+            </section>
+        </header>
+        <div class="doList container">
+            <div class="doing">
+                <h2 class="left">正在进行</h2>
+                <span class="todoCount">0</span>       
+            </div>
+            <div class="selectAllTodo">
+                <input id="checkbox1" type="checkbox" onchange="" >
+                <p>全部添加</p>
+                <input id="checkbox2" type="checkbox" onchange="" >
+                <p>全部删除</p>
+                <!-- <button class="addBatch" onclick="addBatchFunc()">批量添加</button> -->
+            </div>
+            <ul class="doingList" id="data1"  >
+            </ul>
+            <!-- <br class="clearfloat"> -->
+            <div class="finish">
+                <h2 class="left">已经完成</h2>
+                <span class="finishCount right">0</span>
+            </div>
+            <div class="selectAllTodo">
+                <input id="checkbox3" type="checkbox" onchange="" >
+                <p>全部取消</p>
+                <input id="checkbox4" type="checkbox" onchange="" >
+                <p>全部删除</p>
+                <!-- <button class="addBatch" onclick="addBatchFunc()">批量添加</button> -->
+            </div>
+            <ul class="finishList" id="data2" >
+            </ul>
+        </div>
+    </div>
+    <script src="./js/sea.js"></script>
+    <script >
+        seajs.use(["./js/index.js","./js/superAdd.js"],function(index,superAdd){
+            index.myload();
+            // index.myaddEventListener();
+        })
+    </script>
+</body>
+</html>
