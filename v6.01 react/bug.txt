@@ -1,0 +1,2 @@
+2.批量添加的值
+5.this.refs.input.focus()
