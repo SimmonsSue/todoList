@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todoList</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <section  class="section">
+                    <span class="appName">TodoList</span>
+                    <span class="add">
+                        <form action="">
+                            <input id="inputValue"type="text" placeholder="添加todo"  required="required">
+                        </form>
+                    </span>
+                    <span class="superAdd" id='addMuch' >
+                        <a  href="javascript:(0);" style="float:right;font-size: 10px">
+                            添加一万条
+                        </a>
+                        <!-- <button onclick="superAdd1()" style="display: block;height:25px;color: white;background-color:rgb(167, 160, 120);border-radius: 5px;margin-left:0px;" >批量添加</button> -->
+                    </span>
+                    
+            </section>
+        </header>
+        <div class="doList container">
+            <div class="doing">
+                <h2 class="left">正在进行</h2>
+                <span class="todoCount">0</span>       
+            </div>
+            <div class="selectAllTodo">
+                <input id="selectAllTodo" type="checkbox"  >
+                <p>全部添加</p>
+                <input id="deleteAllTodo" type="checkbox"  >
+                <p>全部删除</p>
+                <!-- <button class="addBatch" onclick="addBatchFunc()">批量添加</button> -->
+            </div>
+            <ul class="doingList" id=""  >
+            </ul>
+            <!-- <br class="clearfloat"> -->
+            <div class="finish">
+                <h2 class="left">已经完成</h2>
+                <span class="finishCount right">0</span>
+            </div>
+            <div class="selectAllTodo">
+                <input id="cancelAllFinish" type="checkbox" >
+                <p>全部取消</p>
+                <input id="deleteAllFinish" type="checkbox" >
+                <p>全部删除</p>
+                <!-- <button class="addBatch" onclick="addBatchFunc()">批量添加</button> -->
+            </div>
+            <ul class="finishList" id="" >
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="./src/js/index.js"></script> -->
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
